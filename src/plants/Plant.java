@@ -4,6 +4,7 @@ import java.util.Random;
 
 import food.EFoodType;
 import food.IEdible;
+
 import mobility.ILocatable;
 import mobility.Point;
 import utilities.MessageUtility;
@@ -100,7 +101,7 @@ public abstract class Plant implements IEdible, ILocatable {
 	 */
 	@Override
 	public boolean setLocation(Point newLocation) {
-		boolean isSuccess = Point.cheackBounderies(newLocation);
+		boolean isSuccess = Point.checkBoundaries(newLocation);
 		if (isSuccess) {
 			this.location = newLocation;
 		}

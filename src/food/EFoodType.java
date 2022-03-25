@@ -1,5 +1,5 @@
 package food;
 
-public enum EFoodType{
+public enum EFoodType {
     MEAT, NOTFOOD, VEGETABLE;
 }
